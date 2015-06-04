@@ -2,6 +2,7 @@
 # This script will try to solve the problem described in:
 # https://www.hackerrank.com/challenges/lonely-integer
 
+
 def lonelyinteger(b):
     """
     This function will do the job
