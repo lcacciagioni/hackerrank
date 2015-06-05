@@ -8,7 +8,7 @@ def get_vehicle(lane, start, end):
     This function will detect which vehicle can pass all the way from the
     begining to the exit.
     """
-    return min(lanes[start:end])
+    return min(lane[start:end])
 
 if __name__ == "__main__":
     n, t = input().split()
@@ -19,5 +19,5 @@ if __name__ == "__main__":
 
     for i in range(int(t)):
         st = int(test_cases[i][0])
-        en = int(test_cases[i][0])
+        en = int(test_cases[i][1]) + 1
         print(get_vehicle(lanes, st, en))
