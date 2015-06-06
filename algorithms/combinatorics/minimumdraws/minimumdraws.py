@@ -8,3 +8,10 @@ def min_draw(num_pairs):
 
 
 if __name__ == "__main__":
+    T = int(input())
+    pairs = list()
+    for i in range(T):
+        pairs.append(int(input()))
+
+    for i in range(T):
+        print(min_draw(pairs[i]))

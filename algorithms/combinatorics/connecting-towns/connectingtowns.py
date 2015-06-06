@@ -1,19 +1,12 @@
 #!/usr/bin/env python3
 # This script will try to solve the problem described in:
 # https://www.hackerrank.com/challenges/connecting-towns
+import functools, operator as op, sys
 
 
-def con_town(routes):
-
-
-
-if __name__ == "__main__":
-    T = int(input())
-    towns_routes = list()
-    for i in range(T):
-        towns = input()
-        routes = input()
-        towns_routes.append([towns, routes])
-
-    for i in range(T):
-        con_town(towns_routes[i][1])
+if __name__ == '__main__':
+    T = int(sys.stdin.readline())
+    for _ in range(T):
+        int(sys.stdin.readline())
+        N = [int(x) for x in sys.stdin.readline().split()]
+        print(functools.reduce(op.mul, N, 1) % 1234567)
